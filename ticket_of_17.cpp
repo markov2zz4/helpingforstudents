@@ -31,7 +31,7 @@ int create_string(char *a,  int n) {
 void ticket_of_17() {
     srand(time(NULL));
 
-    const int n = 20;
+    const int n = 50;
     char str[n];
 
     printf("String: ");
