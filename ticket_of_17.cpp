@@ -11,15 +11,17 @@ int arr_max(int *a, int N) {
 int create_string(char *a,  int n) {
     int count = 0;
     int arr[n] = {0};
-    for(int i=0; i < n; ++i) {
+
+    for(int i=0; i < strlen(a); ++i) {
         if(a[i] != 'C' && a[i] != 'F') {
             count++;
         }
-        else
-        {
+        else {
             arr[i] = count;
             count = 0;
         }
+        arr[i] = count;
+
     }
     count = arr_max(arr, n);
     return count;
