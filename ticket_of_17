@@ -37,10 +37,10 @@ void ticket_of_17() {
 
     int count = create_string(str, n);
     printf("%d", count);
-    _getch();
-    return 0;
 }
 
 int main() {
   ticket_of_17();
+  _getch();
+  return 0;
 }
